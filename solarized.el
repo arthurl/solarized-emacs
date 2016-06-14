@@ -319,16 +319,6 @@ customize the resulting theme."
 
 ;;;;; diary
      `(diary ((,class (:foreground ,yellow))))
-;;;;; dired
-     `(dired-directory ((,class (:foreground ,blue :weight normal))))
-     `(dired-flagged ((,class (:foreground ,red))))
-     `(dired-header ((,class (:foreground ,base03 :background ,blue))))
-     `(dired-ignored ((,class (:inherit shadow))))
-     `(dired-mark ((,class (:foreground ,yellow :weight bold))))
-     `(dired-marked ((,class (:foreground ,magenta :weight bold))))
-     `(dired-perm-write ((,class (:foreground ,base0 :underline t))))
-     `(dired-symlink ((,class (:foreground ,cyan :weight normal :slant italic))))
-     `(dired-warning ((,class (:foreground ,orange :underline t))))
 ;;;;; dired-async
      `(dired-async-message ((,class (:background ,(if (eq variant 'light) yellow-l yellow) ))))
      `(dired-async-mode-message
@@ -339,6 +329,30 @@ customize the resulting theme."
                                       :foreground ,base1
                                       :underline ,s-line
                                       :weight bold))))
+;;;;; dired+
+      `(diredp-compressed-file-suffix ((,class (:foreground ,blue))))
+      `(diredp-date-time ((,class (:foreground ,blue))))
+      `(diredp-deletion ((,class (:inherit error :inverse-video t))))
+      `(diredp-deletion-file-name ((,class (:inherit error))))
+      `(diredp-dir-heading ((,class (:foreground ,green :background nil :weight bold))))
+      `(diredp-dir-priv ((,class (:foreground ,cyan :background nil))))
+      `(diredp-exec-priv ((,class (:foreground ,blue :background nil))))
+      `(diredp-executable-tag ((,class (:foreground ,red :background nil))))
+      `(diredp-file-name ((,class (:foreground ,yellow))))
+      `(diredp-file-suffix ((,class (:foreground ,green))))
+      `(diredp-flag-mark ((,class (:foreground ,green :inverse-video t))))
+      `(diredp-flag-mark-line ((,class (:background nil :inherit highlight))))
+      `(diredp-ignored-file-name ((,class (:inherit shadow))))
+      `(diredp-link-priv ((,class (:background nil :foreground ,violet))))
+      `(diredp-mode-line-flagged ((,class (:foreground ,red))))
+      `(diredp-mode-line-marked ((,class (:foreground ,green))))
+      `(diredp-no-priv ((,class (:background nil))))
+      `(diredp-number ((,class (:foreground ,yellow))))
+      `(diredp-other-priv ((,class (:background nil :foreground ,magenta))))
+      `(diredp-rare-priv ((,class (:foreground ,red :background nil))))
+      `(diredp-read-priv ((,class (:foreground ,green :background nil))))
+      `(diredp-symlink ((,class (:foreground ,violet))))
+      `(diredp-write-priv ((,class (:foreground ,yellow :background nil))))
 ;;;;; dropdown
      `(dropdown-list-face ((,class (:background ,base02 :foreground ,cyan))))
      `(dropdown-list-selection-face ((,class (:background ,cyan-lc :foreground ,cyan-hc))))
