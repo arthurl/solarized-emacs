@@ -1507,7 +1507,7 @@ customize the resulting theme."
      `(mu4e-cited-5-face ((,class (:foreground ,cyan :slant italic :weight normal))))
      `(mu4e-cited-6-face ((,class (:foreground ,green :slant italic :weight normal))))
      `(mu4e-cited-7-face ((,class (:foreground ,blue :slant italic :weight normal))))
-     `(mu4e-flagged-face ((,class (:foreground ,blue :weight normal))))
+     `(mu4e-flagged-face ((,class (:foreground ,orange :weight normal))))
      `(mu4e-unread-face ((,class (:foreground ,green :weight normal))))
      `(mu4e-view-url-number-face ((,class (:foreground ,yellow :weight normal))))
      `(mu4e-warning-face ((,class (:foreground ,red :slant normal :weight bold))))
