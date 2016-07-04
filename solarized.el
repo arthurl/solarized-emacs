@@ -1634,30 +1634,31 @@ customize the resulting theme."
                                           :box (:line-width 1 :style released-button)))))
      `(org-code ((,class (:foreground ,base01))))
      `(org-date ((,class (:foreground ,blue :underline t))))
+     `(org-document-title ((,class (:weight bold :foreground ,yellow :height 1.44))))
      `(org-done ((,class (:weight bold :foreground ,green))))
      `(org-ellipsis ((,class (:foreground ,base01))))
      `(org-formula ((,class (:foreground ,yellow))))
      `(org-headline-done ((,class (:foreground ,green))))
      `(org-hide ((,class (:foreground ,base03))))
-     `(org-level-1 ((,class (:inherit ,s-variable-pitch :foreground ,orange
+     `(org-level-1 ((,class (:inherit default :foreground ,orange
                              ,@(when solarized-scale-org-headlines
                                  (list :height solarized-height-plus-4))))))
-     `(org-level-2 ((,class (:inherit ,s-variable-pitch :foreground ,green
+     `(org-level-2 ((,class (:inherit default :foreground ,green
                              ,@(when solarized-scale-org-headlines
                                  (list :height solarized-height-plus-3))))))
-     `(org-level-3 ((,class (:inherit ,s-variable-pitch :foreground ,blue
+     `(org-level-3 ((,class (:inherit default :foreground ,blue
                              ,@(when solarized-scale-org-headlines
                                  (list :height solarized-height-plus-2))))))
-     `(org-level-4 ((,class (:inherit ,s-variable-pitch :foreground ,yellow
+     `(org-level-4 ((,class (:inherit default :foreground ,yellow
                              ,@(when solarized-scale-org-headlines
                                  (list :height solarized-height-plus-1))))))
-     `(org-level-5 ((,class (:inherit ,s-variable-pitch
+     `(org-level-5 ((,class (:inherit default
                                       :foreground ,cyan))))
-     `(org-level-6 ((,class (:inherit ,s-variable-pitch
+     `(org-level-6 ((,class (:inherit default
                                       :foreground ,green))))
-     `(org-level-7 ((,class (:inherit ,s-variable-pitch
+     `(org-level-7 ((,class (:inherit default
                                       :foreground ,red))))
-     `(org-level-8 ((,class (:inherit ,s-variable-pitch
+     `(org-level-8 ((,class (:inherit default
                                       :foreground ,blue))))
      `(org-link ((,class (:foreground ,yellow :underline t))))
      `(org-sexp-date ((,class (:foreground ,violet))))
