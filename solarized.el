@@ -1430,15 +1430,15 @@ customize the resulting theme."
      `(mc/cursor-face ((,class (:inherit cursor :inverse-video nil))))
 ;;;;; message-mode
      `(message-cited-text ((,class (:foreground ,base01))))
-     `(message-header-name ((,class (:foreground ,base01))))
+     `(message-header-name ((,class (:foreground ,green :background nil))))
      `(message-header-other ((,class (:foreground ,base0 :weight normal))))
-     `(message-header-to ((,class (:foreground ,base0 :weight normal))))
-     `(message-header-cc ((,class (:foreground ,base0 :weight normal))))
-     `(message-header-newsgroups ((,class (:foreground ,yellow :weight bold))))
-     `(message-header-subject ((,class (:foreground ,cyan :weight normal))))
+     `(message-header-to ((,class (:inherit message-header-other :foreground ,orange :weight bold))))
+     `(message-header-cc ((,class (:inherit message-header-to :foreground nil))))
+     `(message-header-newsgroups ((,class (:foreground ,cyan :background nil :slant normal))))
+     `(message-header-subject ((,class (:inherit message-header-other :foreground ,yellow :weight bold))))
      `(message-header-xheader ((,class (:foreground ,cyan))))
      `(message-mml ((,class (:foreground ,yellow :weight bold))))
-     `(message-separator ((,class (:foreground ,base01 :slant italic))))
+     `(message-separator ((,class (:foreground ,magenta))))
 ;;;;; mew
      `(mew-face-header-subject ((,class (:foreground ,orange))))
      `(mew-face-header-from ((,class (:foreground ,yellow))))
@@ -1514,11 +1514,16 @@ customize the resulting theme."
      `(mu4e-header-highlight-face
        ((,class (:inherit unspecified :foreground unspecified :background ,base02
                           :underline unspecified  :weight unspecified))))
-     `(mu4e-view-contact-face ((,class (:foreground ,base0  :weight normal))))
      `(mu4e-view-header-key-face ((,class (:inherit message-header-name :weight normal))))
      `(mu4e-view-header-value-face ((,class (:foreground ,cyan :weight normal :slant normal))))
      `(mu4e-view-link-face ((,class (:inherit link))))
      `(mu4e-view-special-header-value-face ((,class (:foreground ,blue :weight normal :underline nil))))
+     ;; Personal additions
+     `(mu4e-header-marks-face ((,class (:underline nil :foreground ,yellow))))
+     `(mu4e-ok-face ((,class (:foreground ,green))))
+     `(mu4e-view-attach-number-face ((,class (:inherit nil :foreground ,orange))))
+     `(mu4e-highlight-face ((,class (:inherit highlight))))
+     `(mu4e-title-face ((,class (:inherit nil :foreground ,green))))
 ;;;;; mumamo
      `(mumamo-background-chunk-submode1 ((,class (:background ,base02))))
 ;;;;; nav
